@@ -11,6 +11,7 @@
 # generated files
 bin/
 gen/
+obj/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -20,6 +21,7 @@ local.properties
 .cproject
 .checkstyle
 .settings/
+
 
 # Android NDK Files
 *.so
