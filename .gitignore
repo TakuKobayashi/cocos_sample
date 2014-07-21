@@ -54,3 +54,8 @@ Pods/*
 .idea/*
 
 publish/*
+
+
+*Debug.*
+*.opensdf
+*.sdf
