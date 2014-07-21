@@ -71,7 +71,19 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
+
+    Calc *calc = new Calc();
+    calc->addValue(1000);
+    std::stringstream ss;
+    ss << calc->getValue();
     
+    auto calcLabel = LabelTTF::create();
+    calcLabel->setString(ss.str());
+    calcLabel->setFontSize(24);
+    calcLabel->setFontName("Arial");
+    calcLabel->setPosition(100, 100);
+    this->addChild(calcLabel);
+
     return true;
 }
 
